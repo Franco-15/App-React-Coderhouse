@@ -3,3 +3,17 @@ h1{
     text-align: center;
     text-shadow: 3px 3px 3px rgb(85, 83, 83);
 }
+
+.itemListContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.products{
+    height: 200px;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}

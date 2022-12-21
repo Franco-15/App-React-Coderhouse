@@ -1,0 +1,26 @@
+.cardImg{
+    height: 200px;
+    object-fit: cover;
+}
+
+.products{
+    height: 200px;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.product{
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    transition: all 0.3s ease;
+}
