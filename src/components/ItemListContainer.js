@@ -1,10 +1,15 @@
 import './ItemListContainer.css';
+import ProductCard from './ProductCard';
 
-function ItemListContainer({greeting}){
-    return(
+function ItemListContainer({drinks}) {
+    return (
         <div className="itemListContainer">
-            <h1>{greeting}</h1>
-        </div>
+            <div className="products">
+                {drinks.map((drink) =>
+                    <ProductCard key={drink.id} drinkItems={drink} />
+                )}
+            </div>
+        </div >
     );
 }
 
