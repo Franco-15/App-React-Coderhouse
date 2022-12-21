@@ -3,7 +3,7 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import CartWidget from './CartWidget';
-
+import {Link}from "react-router-dom"
 
 function NavBar(){
     return (
@@ -12,12 +12,12 @@ function NavBar(){
             <Container>
               <Navbar.Brand href=""><img className='logo' src='https://res.cloudinary.com/dgk9fa4rw/image/upload/v1669930264/ImgAppReact/img/MDQ_Bebidas-r_atpaka.png' alt='logo'/></Navbar.Brand>
               <Nav className="me-auto">
-                <Nav.Link href="">Vinos</Nav.Link>
-                <Nav.Link href="">Cervezas</Nav.Link>
-                <Nav.Link href="">Aperitivos</Nav.Link>
-                <Nav.Link href="">Bebidas Blancas</Nav.Link>
-                <Nav.Link href="">Energizantes</Nav.Link>
-                <Nav.Link href="">Sin Alcohol</Nav.Link>
+                <Link to="vinos">Vinos</Link>
+                <Link to="cervezas">Cervezas</Link>
+                <Link to="aperitivos">Aperitivos</Link>
+                <Link to="bebidasBlancas">Bebidas Blancas</Link>
+                <Link to="energizantes">Energizantes</Link>
+                <Link to="sinAlcohol">Sin Alcohol</Link>
               </Nav>
               <Nav>
                 <Nav.Link href=""><CartWidget/></Nav.Link>
