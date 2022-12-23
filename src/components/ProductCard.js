@@ -1,21 +1,19 @@
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
+import { Link } from 'react-router-dom';
 import './ProductCard.css';
 
+
 function ProductCard({ drinkItems }) {
-    const { nombre, precio, descripcion, img } = drinkItems;
+    const { nombre, img, id } = drinkItems;
     return (
-        <Card style={{ width: '18rem' }}>
+        <Card className='productCard' style={{ width: '16rem' }}>
             <Card.Img className='cardImg' variant="top" src={img.src} alt={img.alt} />
-            <Card.Body>
-                <Card.Title>{nombre}</Card.Title>
-                <Card.Text>
-                    {descripcion}
-                </Card.Text>
-                <Card.Text>
-                    {precio}
-                </Card.Text>
-                <Button variant="primary">Agregar al carrito</Button>
+            <Card.Body className='cardBody'>
+                <Card.Title>{nombre.toUpperCase()}</Card.Title>
+                <Link to={`/item/${id}`}>
+                    <Button variant="primary">Comprar</Button>
+                </Link>
             </Card.Body>
         </Card>
     );
