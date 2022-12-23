@@ -1,0 +1,33 @@
+.imgDetail{
+    height: 300px;
+    object-fit: contain;
+}
+
+.buttonDetail{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.listDescriptionItem{
+    background-color: rgb(206, 206, 206);
+}
+
+.containerDetail{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgb(206, 206, 206);
+}
+
+.bodyDetail{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cardDetail{
+    display: flex;
+    flex-direction: row;
+    width: 600px;
+}
