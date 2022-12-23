@@ -1,7 +1,7 @@
 [
     {
         "id": "1-v",
-        "tipo": "vinos",
+        "tipo": "Vinos",
         "nombre": "colon",
         "precio": 270,
         "descripcion": "Vino Colon Malbec",
@@ -12,7 +12,7 @@
     },
     {
         "id": "2-v",
-        "tipo": "vinos",
+        "tipo": "Vinos",
         "nombre": "don valentin",
         "precio": 370,
         "descripcion": "Vino Don Valentin Malbec",
@@ -23,7 +23,7 @@
     },
     {
         "id": "3-v",
-        "tipo": "vinos",
+        "tipo": "Vinos",
         "nombre": "rutini",
         "precio": 470,
         "descripcion": "Vino Rutini",
@@ -34,7 +34,7 @@
     },
     {
         "id": "4-v",
-        "tipo": "vinos",
+        "tipo": "Vinos",
         "nombre": "Dadá",
         "precio": 470,
         "descripcion": "Vino Dadá",
@@ -45,7 +45,7 @@
     },
     {
         "id": "1-c",
-        "tipo": "cervezas",
+        "tipo": "Cervezas",
         "nombre": "patagonia",
         "precio": 570,
         "descripcion": "Cerveza Patagonia Amber Lage",
@@ -56,7 +56,7 @@
     },
     {
         "id": "2-c",
-        "tipo": "cervezas",
+        "tipo": "Cervezas",
         "nombre": "quilmes",
         "precio": 470,
         "descripcion": "Cerveza Quilmes",
@@ -67,7 +67,7 @@
     },
     {
         "id": "3-c",
-        "tipo": "cervezas",
+        "tipo": "Cervezas",
         "nombre": "imperial",
         "precio": 370,
         "descripcion": "Cerveza Imperial Stout",
@@ -78,7 +78,7 @@
     },
     {
         "id": "4-c",
-        "tipo": "cervezas",
+        "tipo": "Cervezas",
         "nombre": "Andes Rubia Lata",
         "precio": 370,
         "descripcion": "Cerveza Andes Rubia Lata 473cc",
@@ -89,7 +89,7 @@
     },
     {
         "id": "1-a",
-        "tipo": "aperitivos",
+        "tipo": "Aperitivos",
         "nombre": "branca",
         "precio": 470,
         "descripcion": "Fernet Branca",
@@ -100,7 +100,7 @@
     },
     {
         "id": "2-a",
-        "tipo": "aperitivos",
+        "tipo": "Aperitivos",
         "nombre": "gancia",
         "precio": 170,
         "descripcion": "Gancia",
@@ -111,7 +111,7 @@
     },
     {
         "id": "3-a",
-        "tipo": "aperitivos",
+        "tipo": "Aperitivos",
         "nombre": "campari",
         "precio": 370,
         "descripcion": "Campari",
@@ -122,7 +122,7 @@
     },
     {
         "id": "4-a",
-        "tipo": "aperitivos",
+        "tipo": "Aperitivos",
         "nombre": "1882",
         "precio": 400,
         "descripcion": "Fernet 1882",
@@ -133,7 +133,7 @@
     },
     {
         "id": "5-a",
-        "tipo": "aperitivos",
+        "tipo": "Aperitivos",
         "nombre": "Aperol",
         "precio": 400,
         "descripcion": "Aperitivo Aperol",
@@ -144,7 +144,7 @@
     },
     {
         "id": "1-bb",
-        "tipo": "bebidasBlancas",
+        "tipo": "Bebidas Blancas",
         "nombre": "gin bombay",
         "precio": 4700,
         "descripcion": "Gin Bombay",
@@ -155,7 +155,7 @@
     },
     {
         "id": "2-bb",
-        "tipo": "bebidasBlancas",
+        "tipo": "Bebidas Blancas",
         "nombre": "absolut",
         "precio": 2700,
         "descripcion": "Vodka Absolut",
@@ -166,7 +166,7 @@
     },
     {
         "id": "3-bb",
-        "tipo": "bebidasBlancas",
+        "tipo": "Bebidas Blancas",
         "nombre": "jackDaniels",
         "precio": 3700,
         "descripcion": "Jack Daniels",
@@ -177,7 +177,7 @@
     },
     {
         "id": "4-bb",
-        "tipo": "bebidasBlancas",
+        "tipo": "Bebidas Blancas",
         "nombre": "Gin Aconcangua",
         "precio": 3700,
         "descripcion": "gin Aconcangua",
@@ -188,7 +188,7 @@
     },
     {
         "id": "1-e",
-        "tipo": "energizantes",
+        "tipo": "Energizantes",
         "nombre": "speed",
         "precio": 470,
         "descripcion": "Speed",
@@ -199,7 +199,7 @@
     },
     {
         "id": "2-e",
-        "tipo": "energizantes",
+        "tipo": "Energizantes",
         "nombre": "monster",
         "precio": 370,
         "descripcion": "Monster",
@@ -210,7 +210,7 @@
     },
     {
         "id": "3-e",
-        "tipo": "energizantes",
+        "tipo": "Energizantes",
         "nombre": "blue demon",
         "precio": 270,
         "descripcion": "Blue Demon",
@@ -221,7 +221,7 @@
     },
     {
         "id": "4-e",
-        "tipo": "energizantes",
+        "tipo": "Energizantes",
         "nombre": "Monster Ultra Paradise",
         "precio": 270,
         "descripcion": "Monster Ultra Paradise",
@@ -232,7 +232,7 @@
     },
     {
         "id": "1-sa",
-        "tipo": "sinAlcohol",
+        "tipo": "Sin Alcohol",
         "nombre": "coca-cola",
         "precio": 170,
         "descripcion": "Coca-Cola",
@@ -243,7 +243,7 @@
     },
     {
         "id": "2-sa",
-        "tipo": "sinAlcohol",
+        "tipo": "Sin Alcohol",
         "nombre": "sprite",
         "precio": 370,
         "descripcion": "Sprite",
@@ -254,7 +254,7 @@
     },
     {
         "id": "3-sa",
-        "tipo": "sinAlcohol",
+        "tipo": "Sin Alcohol",
         "nombre": "Citric",
         "precio": 570,
         "descripcion": "Jugo CITRIC",
@@ -265,7 +265,7 @@
     },
     {
         "id": "4-sa",
-        "tipo": "sinAlcohol",
+        "tipo": "Sin Alcohol",
         "nombre": "Pepsi",
         "precio": 570,
         "descripcion": "Pepsi 2.25L ",
