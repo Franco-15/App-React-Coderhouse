@@ -1,7 +1,13 @@
 import './ItemListContainer.css';
 import ProductCard from './ProductCard';
+import { useParams } from "react-router-dom";
+
 
 function ItemListContainer({drinks}) {
+    let {categoryId} = useParams();
+    if (categoryId) {
+        drinks = drinks.filter((drink) => drink.tipo === categoryId);
+    }
     return (
         <div className="itemListContainer">
             <div className="products">
