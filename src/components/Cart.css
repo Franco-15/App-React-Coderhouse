@@ -1,0 +1,14 @@
+.cartBody{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cartTitle{
+    font-size: 50px;
+    font-weight: bold;
+    margin: 10px;
+    color: white;
+    text-shadow: 2px 5px 5px rgb(213, 210, 210);
+}
