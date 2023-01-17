@@ -5,12 +5,12 @@ import './ProductCard.css';
 
 
 function ProductCard({ drinkItems }) {
-    const { nombre, img, id } = drinkItems;
+    const { id, name, img} = drinkItems;
     return (
         <Card className='productCard' style={{ width: '14rem' }}>
             <Card.Img className='cardImg' variant="top" src={img.src} alt={img.alt} />
             <Card.Body className='cardBody'>
-                <Card.Title>{nombre.toUpperCase()}</Card.Title>
+                <Card.Title>{name.toUpperCase()}</Card.Title>
                 <Link to={`/item/${id}`}>
                     <Button variant="primary">Comprar</Button>
                 </Link>

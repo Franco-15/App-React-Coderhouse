@@ -5,8 +5,8 @@ import Navbar from "react-bootstrap/Navbar";
 import CartWidget from "./CartWidget";
 import { Link } from "react-router-dom";
 
-function NavBar({ drinks }) {
-  const categoriesRepeat = drinks.map((drink) => drink.tipo);
+function NavBar({ drinks, cartLength }) {
+  const categoriesRepeat = drinks.map((drink) => drink.category);
   const categories = [...new Set(categoriesRepeat)];
 
   return (
@@ -39,7 +39,7 @@ function NavBar({ drinks }) {
           </Nav>
           <Nav className="navbarCartWidget">
           <Nav.Link href="">
-            <CartWidget />
+            <CartWidget  cartLength={cartLength}/>
           </Nav.Link>
         </Nav>
         </Navbar.Collapse>
