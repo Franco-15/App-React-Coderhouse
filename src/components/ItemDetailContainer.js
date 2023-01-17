@@ -7,13 +7,13 @@ import { Container } from 'react-bootstrap';
 import { useEffect, useState } from 'react';
 
 function ItemDetailContainer({ drinks }) {
-    const [cantidad, setCantidad] = useState(1)
+    const [quantify, setQuantify] = useState(1)
     
-    const incrCant = () => setCantidad(cantidad + 1)
-    const decrCant = () => setCantidad(cantidad - 1)
+    const incrCant = () => setQuantify(quantify + 1)
+    const decrCant = () => setQuantify(quantify - 1)
 
     useEffect(()=>{
-        setCantidad(1);
+        setQuantify(1);
     },[])
 
     let itemId = useParams();
@@ -26,18 +26,18 @@ function ItemDetailContainer({ drinks }) {
                 </div>
                 <Container className='containerDetail'>
                     <Card.Body>
-                        <Card.Title>{item.nombre.toUpperCase()}</Card.Title>
+                        <Card.Title>{item.name.toUpperCase()}</Card.Title>
                         <Card.Text>
-                            {item.descripcion}
+                            {item.description}
                         </Card.Text>
                     </Card.Body>
                     <ListGroup className="list-group-flush">
-                        <ListGroup.Item className='listDescriptionItem'>{`Tipo: ${item.tipo.charAt(0).toUpperCase() + item.tipo.slice(1)}`}</ListGroup.Item>
-                        <ListGroup.Item className='listDescriptionItem'>{`Precio: $${item.precio}`}</ListGroup.Item>
+                        <ListGroup.Item className='listDescriptionItem'>{`Tipo: ${item.category.charAt(0).toUpperCase() + item.category.slice(1)}`}</ListGroup.Item>
+                        <ListGroup.Item className='listDescriptionItem'>{`Precio: $${item.price}`}</ListGroup.Item>
                     </ListGroup>
                     <Card.Body className='quantify'>
-                        <Button variant="primary" disabled={cantidad===1} onClick={decrCant}>-</Button>
-                        <div className='logQuantify'>{cantidad}</div>
+                        <Button variant="primary" disabled={quantify===1} onClick={decrCant}>-</Button>
+                        <div className='logQuantify'>{quantify}</div>
                         <Button variant="primary"  onClick={incrCant}>+</Button>
                     </Card.Body>
                     <Card.Body className='buttonDetail'>
