@@ -2,13 +2,13 @@ import './CartWidget.css';
 import {BiCartAlt} from "react-icons/bi";
 import { Link } from 'react-router-dom';
 
-function CartWidget(){
+function CartWidget({cartLength}){
     return(
         <div className="cartWidget">
             <Link to={'/cart'}>
                 <BiCartAlt className='logoCarrito'/>
             </Link>
-            <p>2</p>
+            <p>{cartLength}</p>
         </div>
     );
 }
