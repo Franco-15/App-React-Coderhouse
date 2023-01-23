@@ -1,10 +1,10 @@
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import { Link } from 'react-router-dom';
-import './ProductCard.css';
+import './Product.css';
 
 
-function ProductCard({ drinkItems }) {
+function Product({ drinkItems }) {
     const { id, name, img} = drinkItems;
     return (
         <Card className='productCard' style={{ width: '14rem' }}>
@@ -19,4 +19,4 @@ function ProductCard({ drinkItems }) {
     );
 }
 
-export default ProductCard;
+export default Product;

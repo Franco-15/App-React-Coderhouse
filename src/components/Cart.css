@@ -1,14 +1,54 @@
-.cartBody{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.containerCart{
+    display: grid;
+    grid-template-areas : 
+    "cart resume";
+    grid-gap: 10px;
+    margin: 20px;
 }
 
-.cartTitle{
-    font-size: 50px;
-    font-weight: bold;
-    margin: 10px;
+.carritoVacio{
+    text-align: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     color: white;
-    text-shadow: 2px 5px 5px rgb(213, 210, 210);
+    font-size: 3rem;
+}
+
+.cart{
+    grid-area: "cart";
+    color: black;
+    background-color: white;
+}
+
+.resume{
+    font-size: 1.2rem;
+    grid-area: "resume";
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+}
+
+img{
+    height: 100px;
+    width: 100px;
+    object-fit: contain;
+}
+
+tr{
+    padding: 0;
+}
+
+.logQuantifyCart{
+    width: 30px;
+    height: 30px;
+    text-align: center;
+}
+
+.quantityCart{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

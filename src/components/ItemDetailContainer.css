@@ -35,17 +35,10 @@
     margin: 30px;
 }
 
-.quantify{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-}
-
 .logQuantify{
     background-color: white;
     width: 200px;
-    height: 30px;
+    height: 35px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -55,4 +48,33 @@
 .cardDetail{
     display: flex;
     flex-direction: row !important;
+}
+
+.selectQuantify{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.notFound{
+    color: white;
+    font-size: 3rem;
+}
+
+.quantity{
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0 !important;
+}
+
+.selectQuantifyText{
+    margin: 0;
+    padding: 0 !important;
+}
+
+.selectQuantifyButton{
+    height: 35px;
+    text-align: center;
+    border-radius: 0 !important;
 }
