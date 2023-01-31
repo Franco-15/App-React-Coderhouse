@@ -1,19 +1,21 @@
 import './ItemListContainer.css';
 import Product from './Product';
 import { useParams } from "react-router-dom";
-import { useContext } from "react";
-import { AppContext } from '../context/AppContext';
 import Loading from './Loading';
+import { useContext } from 'react';
+import { CartContext } from '../context/CartContext';
 
 function ItemListContainer() {
-    const {products, loading} = useContext(AppContext);
+
+    const { products, loading } = useContext(CartContext);
     let { categoryId } = useParams();
     let drinks = products;
+
     if (categoryId) {
-        drinks = drinks.filter((drink) => drink.category === categoryId);
+       drinks = drinks.filter((drink) => drink.category === categoryId);
     }
+    
     return (
-        
         <div className="itemListContainer">
             {loading ? <Loading/> : 
             <div className="products">

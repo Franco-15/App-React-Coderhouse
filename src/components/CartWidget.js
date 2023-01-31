@@ -2,16 +2,17 @@ import './CartWidget.css';
 import {BiCartAlt} from "react-icons/bi";
 import { Link } from 'react-router-dom';
 import React, { useContext } from 'react';
-import { AppContext } from '../context/AppContext';
+import { CartContext } from '../context/CartContext';
 
 function CartWidget(){
-    const { lengthCart } = useContext(AppContext);
+    const { cart } = useContext(CartContext);
+    let totalItems = cart.reduce((acc, item) => acc + item.quantity, 0);
     return(
         <div className="cartWidget">
             <Link to={'/cart'}>
                 <BiCartAlt className='logoCarrito'/>
             </Link>
-            <p>{lengthCart}</p>
+            <p>{totalItems}</p>
         </div>
     );
 }

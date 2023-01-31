@@ -7,15 +7,15 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Route, Routes } from 'react-router-dom';
 import React from 'react';
 import Cart from './components/Cart';
-import AppContextProvider from './context/AppContext';
+import CartContextProvider from './context/CartContext';
 
 function App() {
 
   return (
     <div className="app">
-        <AppContextProvider>
+        <CartContextProvider>
           <header>
-            <NavBar/>
+            <NavBar />
           </header>
           <main>
             <Routes>
@@ -25,7 +25,7 @@ function App() {
               <Route path='/cart' element={<Cart />} />
             </Routes>
           </main>
-        </AppContextProvider>
+        </CartContextProvider>
     </div>
   );
 }

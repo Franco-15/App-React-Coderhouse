@@ -1,9 +1,35 @@
 .containerCart{
     display: grid;
     grid-template-areas : 
-    "cart resume";
+    "cart cart resume";
     grid-gap: 10px;
-    margin: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    background-color: white;
+}
+
+.formField{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 10px;
+    padding: 10px;
+    width: 400px;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.641);
+    box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.623);
+
 }
 
 .carritoVacio{
@@ -19,7 +45,7 @@
 .cart{
     grid-area: "cart";
     color: black;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.604);
 }
 
 .resume{
@@ -32,8 +58,8 @@
 }
 
 img{
-    height: 100px;
-    width: 100px;
+    height: 50px;
+    width: 50px;
     object-fit: contain;
 }
 
@@ -51,4 +77,8 @@ tr{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.buttonCleanCart{
+    margin-top: 50px;
 }

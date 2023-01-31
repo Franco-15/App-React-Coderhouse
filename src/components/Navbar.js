@@ -5,13 +5,14 @@ import Navbar from "react-bootstrap/Navbar";
 import CartWidget from "./CartWidget";
 import { Link } from "react-router-dom";
 import { useContext } from "react";
-import { AppContext } from "../context/AppContext";
+import { CartContext } from "../context/CartContext";
 
 
 function NavBar() {
-  const { products: drinks } = useContext(AppContext);
+  const { products:drinks } = useContext(CartContext);
   const categoriesRepeat = drinks.map((drink) => drink.category);
   const categories = [...new Set(categoriesRepeat)];
+  
   return (
     <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
       <Container>
