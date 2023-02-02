@@ -4,6 +4,8 @@ App web para e-commerce de bebidas desarrollada en react
 
 Link a netlify: [MDQ Bebidas]("https://mdqbebidas-react.netlify.app")
 
+Video de la pagina: [MDQBebidas.mp4]("https://res.cloudinary.com/dgk9fa4rw/video/upload/v1675296114/ImgAppReact/img/MDQ_Bebidas_-_Google_Chrome_2023-02-01_19-55-01_Trim_hizoxa.mp4")
+
 ## Caracteristicas
 
 - Página inicial donde se muestran todos los productos.
@@ -23,7 +25,3 @@ Link a netlify: [MDQ Bebidas]("https://mdqbebidas-react.netlify.app")
 - react-icons
 - react-router-dom
 - toastify
-
-## Pagina
-
-![video pagina]("public\MDQ-Bebidas-Google-Chrome-2023-02-01-19-55-01_Trim.gif")
